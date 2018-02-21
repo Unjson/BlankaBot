@@ -2,15 +2,15 @@
   "xrd": [
     {
       "Name": "Baiken",
-      "Votes": 0
+      "Votes": 1
     },
     {
       "Name": "Dizzy",
-      "Votes": 0
+      "Votes": 1
     },
     {
       "Name": "Elphelt",
-      "Votes": 0
+      "Votes": 2
     },
     {
       "Name": "I-No",
@@ -18,7 +18,7 @@
     },
     {
       "Name": "Jack-O",
-      "Votes": 0
+      "Votes": 1
     },
     {
       "Name": "Jam",
@@ -30,18 +30,92 @@
     },
     {
       "Name": "May",
-      "Votes": 3
+      "Votes": 5
     },
     {
       "Name": "Millia",
-      "Votes": 3
+      "Votes": 4
     },
     {
       "Name": "Ky",
-      "Votes": 0
+      "Votes": 2
     },
     {
       "Name": "Ramlethal",
+      "Votes": 0
+    }
+  ],
+  "bb": [
+    {
+      "Name": "Bullet",
+      "Votes": 0
+    },
+    {
+      "Name": "Celica",
+      "Votes": 1
+    },
+    {
+      "Name": "Izayoi",
+      "Votes": 0
+    },
+    {
+      "Name": "Kokonoe",
+      "Votes": 0
+    },
+    {
+      "Name": "Litchi",
+      "Votes": 0
+    },
+    {
+      "Name": "Makoto",
+      "Votes": 0
+    },
+    {
+      "Name": "Noel",
+      "Votes": 0
+    },
+    {
+      "Name": "Platinum",
+      "Votes": 0
+    },
+    {
+      "Name": "Rachel",
+      "Votes": 0
+    },
+    {
+      "Name": "Taokaka",
+      "Votes": 0
+    },
+    {
+      "Name": "Tsubaki",
+      "Votes": 0
+    },
+    {
+      "Name": "Lambda",
+      "Votes": 0
+    },
+    {
+      "Name": "Mu",
+      "Votes": 0
+    },
+    {
+      "Name": "Nu",
+      "Votes": 0
+    },
+    {
+      "Name": "Es",
+      "Votes": 0
+    },
+    {
+      "Name": "Izanami",
+      "Votes": 0
+    },
+    {
+      "Name": "Mai",
+      "Votes": 0
+    },
+    {
+      "Name": "Nine",
       "Votes": 0
     }
   ]

@@ -5,7 +5,8 @@ var auth = require('./auth.json');
 var fileName = './waifus.json'
 var waifus = require(fileName);
 
-var waifuVoteCooldown;
+var waifuVoteCooldownXrd;
+var waifuVoteCooldownBb
 
 // Configure logger settings
 logger.remove(logger.transports.Console);
@@ -25,7 +26,8 @@ bot.on('ready', function (evt) {
     logger.info('Logged in as: ');
     logger.info(bot.username + ' - (' + bot.id + ')');
 
-    waifuVoteCooldown = false;    
+    waifuVoteCooldownXrd = false;
+    waifuVoteCooldownBb = false;    
 });
 
 bot.on('message', function (user, userID, channelID, message, evt) {
@@ -154,7 +156,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 
                 bot.sendMessage({
                     to: channelID,
-                    message: 'Juri can punish LP Blanka Ball on Block with: \n-*MK Flip Kick* [214MK]\n-*V-Skill (Charged)* [MP+MK]\n-*Super* [214214K]\n-*(In the corner she also gets LK Flip Kick as well as Dash-in)*'
+                    message: 'Juri can punish LP Blanka Ball on Block with: \n-*MK Flipkick* {214MK}\n-*V-Skill (Charged)* {MP+MK}\n-*Super* {214214K}\n-*(In the corner she also gets LK Flipkick as well as Dash-in)*'
                 });
             break;
 
@@ -180,13 +182,13 @@ bot.on('message', function (user, userID, channelID, message, evt) {
            
             if (args[1] == 'vote' || args[1] == 'Vote'){
 
-                if (waifuVoteCooldown == false){
+                if (waifuVoteCooldownXrd == false){
 
                 msg = voteForWaifu('xrd', args[2]);
 
                 if (msg != ""){
 
-                    waifuVoteCooldown = true;
+                    waifuVoteCooldownXrd = true;
 
                     bot.sendMessage({
                         to: channelID,
@@ -194,7 +196,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                        });
 
                     setTimeout(function () {
-                        waifuVoteCooldown = false;
+                        waifuVoteCooldownXrd = false;
                     }, 300000)
 
                 }
@@ -231,7 +233,67 @@ bot.on('message', function (user, userID, channelID, message, evt) {
             }
         
 
-         break;           
+         break;
+         
+        // BB
+        case 'blazblue':
+        case 'bb':
+           
+            if (args[1] == 'vote' || args[1] == 'Vote'){
+
+                if (waifuVoteCooldownBb == false){
+
+                msg = voteForWaifu('bb', args[2]);
+
+                if (msg != ""){
+
+                    waifuVoteCooldownBb = true;
+
+                    bot.sendMessage({
+                        to: channelID,
+                        message: 'Thank you! Your vote for ' + msg + ' has been cast.'
+                       });
+
+                    setTimeout(function () {
+                        waifuVoteCooldownBb = false;
+                    }, 300000)
+
+                }
+
+                else{
+
+                    bot.sendMessage({
+                        to: channelID,
+                        message: "I'm Sorry. I don't know who that is. Did you make a typo?"
+                       });
+
+                }     
+
+            }
+
+             else{
+
+                bot.sendMessage({
+                    to: channelID,
+                    message: "Sorry. I'm still on cooldown (Only one vote allowed every 5 minutes)."
+                   });
+
+             }
+
+         }
+           else{ 
+
+            winner = determineWaifu("bb");
+       
+              bot.sendMessage({
+                 to: channelID,
+                 message: '**' + winner[0] + '** is the best Waifu! (*' + winner[1] + ' Votes*)'
+                });
+            }
+        
+
+         break; 
+
          }
     }
     else if (message.substring(0, 1) == '!') {
@@ -291,6 +353,22 @@ function determineWaifu(game){
           }
     }
 
+    if (game == "bb"){
+
+        var topname = null;
+        var topvotes = 0;
+
+        for (var i = 0, len = waifus.bb.length; i < len; i++) {
+            
+
+            if (waifus.bb[i].Votes > topvotes){
+                topname = waifus.bb[i].Name;
+                topvotes = waifus.bb[i].Votes;
+            }
+
+          }
+    }
+
     return [topname, topvotes];
 }
 
@@ -306,6 +384,26 @@ function voteForWaifu(game, userVote){
             if (waifus.xrd[i].Name == userVote){
 
                 waifus.xrd[i].Votes = waifus.xrd[i].Votes + 1;
+
+                AcceptedVote = userVote;
+            }
+
+          }
+
+        fs.writeFile(fileName, JSON.stringify(waifus, null, 2), function (err) {
+            if (err) return console.log(err);
+        });
+
+    }
+
+    if (game == "bb"){
+
+        for (var i = 0, len = waifus.bb.length; i < len; i++) {
+            
+
+            if (waifus.bb[i].Name == userVote){
+
+                waifus.bb[i].Votes = waifus.bb[i].Votes + 1;
 
                 AcceptedVote = userVote;
             }
