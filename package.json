@@ -1,0 +1,11 @@
+{
+  "name": "BlankaBot",
+  "version": "1.0.0",
+  "description": "Chatbot for the BW-FGC Discord",
+  "main": "bot.js",
+  "author": "Jonas Hundertmark",
+  "dependencies": {
+    "discord.io": "github:woor/discord.io#gateway_v6",
+    "winston": "^2.4.0"
+  }
+}
