@@ -42,10 +42,12 @@ bot.on('message', function (user, userID, channelID, message, evt) {
             // Abi
             case 'abigail':
             case 'Abigail':
+            case 'abi':
+            case 'Abi':
 
                 bot.sendMessage({
                     to: channelID,
-                    message: 'Abigail can punish LP Blanka Ball on Block with: \n-*Sweep* {2HK}'
+                    message: 'Abigail can punish LP Blanka Ball on Block with: \n-*Sweep* {2HK}\n-*(In the corner, 2MP and 2MK also connect)'
                 });
             break;
 
@@ -55,7 +57,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 
                 bot.sendMessage({
                     to: channelID,
-                    message: "Akuma can punish LP Blanka Ball on Block with: \n-*Super* {236236P}'\n-*Raging Demon* {5LP, 5LP, 6, 5LK, 5HP}'\n-*(Dash-up LP works in the corner)*"
+                    message: "Akuma can punish LP Blanka Ball on Block with: \n-*Super* {236236P}'\n-*Raging Demon* {5LP, 5LP, 6, 5LK, 5HP}'\n-*(Dash-in works in the corner)*"
                 });
             break;
 
@@ -69,6 +71,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                 });
             break;   
             
+            //Boxer
             case 'balrog':
             case 'Balrog':
             case 'boxer':
@@ -78,8 +81,50 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                     to: channelID,
                     message: 'Boxer can punish LP Blanka Ball on Block with: \n-*Dash Straight* {[4]6P}\n-*EX Dash Straight* {[4]6PP}\n-*Dash Low* {[4]6K}\n-*EX Dash Low* {[4]6KK}\n-*LK/MK Smash* {623LK/MK}\n-*EX Smash* {623KK}\n-*Super* {236236P}'
                 });
-            break; 
+            break;
             
+            // Birdie
+            case 'birdie':
+            case 'Birdie':
+
+                bot.sendMessage({
+                    to: channelID,
+                    message: 'Birdie can punish LP Blanka Ball on Block with: \n-*EX Headbutt* {236PP}\n-*EX Bullhorn* {[PP]}\n-*(In the corner, 5HP, 3HP, LP Bullhead and MP Bullhead also work)*'
+                });
+            break; 
+
+            // Blanka
+            case 'blanka':
+            case 'Blanka':
+
+                bot.sendMessage({
+                    to: channelID,
+                    message: 'Blanka can punish LP Blanka Ball on Block with: \n-*HP Blanka Ball* {[4]6HP}\n-*EX Blanka Ball* {[4]6PP}\n-*(Slide {3HP} also works in the corner)*'
+                });
+            break;
+            
+            // Cammy
+            case 'cammy':
+            case 'Cammy':
+
+                bot.sendMessage({
+                    to: channelID,
+                    message: 'Cammy can punish LP Blanka Ball on Block with: \n-*HK Spiral Arrow* {236HK}\n-*EX Spiral Arrow* {236KK}\n-*HK Super* {236236HK}\n-*(Dash-in as well as LK and MK Spiral Arrow work in the corner.)*'
+                });
+            break; 
+
+            // Chun-Li
+            case 'chun-li':
+            case 'Chun-Li':
+            case 'chun':
+            case 'Chun':
+
+                bot.sendMessage({
+                    to: channelID,
+                    message: 'Chun Li can punish LP Blanka Ball on Block with: \n-*Super* [236236K]\n-*(In the Corner, all versions of Lightning Legs connect. She can also Dash-in)'
+                });
+            break;
+
             // Claw
             case 'vega':
             case 'Vega':
@@ -89,6 +134,27 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                 bot.sendMessage({
                     to: channelID,
                     message: 'Claw can punish LP Blanka Ball on Block with: \n-*Buster Claw* [6HP]\n-*Slide* [2HK]\n-*EX Flying Barcelona* [623/421+KK]'
+                });
+            break;
+
+             // Dhalsim
+            case 'dhalsim':
+            case 'Dhalsim':
+            case 'sim':
+            case 'Sim':
+
+                bot.sendMessage({
+                    to: channelID,
+                    message: 'Dhalsim can punish LP Blanka Ball on Block with: \n-*{5MP}*\n-*{5MK}*\n-*{5HP}*\n-*{5HK}*\n*-(2MK Slide works in the corner)*'
+                });
+            break;
+            
+            case 'juri':
+            case 'Juri':
+
+                bot.sendMessage({
+                    to: channelID,
+                    message: 'Juri can punish LP Blanka Ball on Block with: \n-*MK Flip Kick* [214MK]\n-*V-Skill (Charged)* [MP+MK]\n-*Super* [214214K]\n-*(In the corner she also gets LK Flip Kick as well as Dash-in)*'
                 });
             break;
 
@@ -180,6 +246,17 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                 bot.sendMessage({
                     to: channelID,
                     message: '*You attract flies!*'
+                });
+            break;
+            
+            //raffle
+            case 'raffle':
+
+                var raf = Math.floor(Math.random() * 101);   
+
+                bot.sendMessage({
+                    to: channelID,
+                    message: '*You deal* ***' + raf + '*** *damage!* (Maximum: 100)'
                 });
             break;
 
