@@ -199,7 +199,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 
                 bot.sendMessage({
                     to: channelID,
-                    message: "Here are Juri's most consistent punishes for LP Blanka Ball: \n-*MK Ryodansatsu*\n-*Critical Art*"
+                    message: "Here are Juri's most consistent punishes for LP Blanka Ball: \n-*MK Ryodansatsu*\n-*V-Skill (pre-charged)*\n-*Critical Art*"
                 });
             break;
 
