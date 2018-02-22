@@ -49,7 +49,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 
                 bot.sendMessage({
                     to: channelID,
-                    message: 'Abigail can punish LP Blanka Ball on Block with: \n-*Sweep* {2HK}\n-*(In the corner, 2MP and 2MK also connect)'
+                    message: "Here are Abigail's most consistent punishes for LP Blanka Ball: \n-*Cr.HK*\n-*Critical Art*"
                 });
             break;
 
@@ -59,7 +59,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 
                 bot.sendMessage({
                     to: channelID,
-                    message: "Akuma can punish LP Blanka Ball on Block with: \n-*Super* {236236P}'\n-*Raging Demon* {5LP, 5LP, 6, 5LK, 5HP}'\n-*(Dash-in works in the corner)*"
+                    message: "Here are Akuma's most consistent punishes for LP Blanka Ball: \n-*Critical Art*\n-*Raging Demon (while in VT1)*"
                 });
             break;
 
@@ -69,7 +69,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 
                 bot.sendMessage({
                     to: channelID,
-                    message: 'Alex can punish LP Blanka Ball on Block with: \n-*MK Elbow* {[4]6MK}\n-*EX Elbow* {[4]6KK}'
+                    message: "Here are Alex's most consistent punishes for LP Blanka Ball: \n-*MK Slash Elbow*\n-*Sledge Hammer (while in VT1)*"
                 });
             break;   
             
@@ -81,7 +81,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 
                 bot.sendMessage({
                     to: channelID,
-                    message: 'Boxer can punish LP Blanka Ball on Block with: \n-*Dash Straight* {[4]6P}\n-*EX Dash Straight* {[4]6PP}\n-*Dash Low* {[4]6K}\n-*EX Dash Low* {[4]6KK}\n-*LK/MK Smash* {623LK/MK}\n-*EX Smash* {623KK}\n-*Super* {236236P}'
+                    message: "Here are Boxer's most consistent punishes for LP Blanka Ball: \n-*Dash Straight (any)*\n-*Dash Low (any)*\n-*LK/MK/EX Screw Smash*\n-*Critical Art*"
                 });
             break;
             
@@ -91,7 +91,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 
                 bot.sendMessage({
                     to: channelID,
-                    message: 'Birdie can punish LP Blanka Ball on Block with: \n-*EX Headbutt* {236PP}\n-*EX Bullhorn* {[PP]}\n-*(In the corner, 5HP, 3HP, LP Bullhead and MP Bullhead also work)*'
+                    message: "Here are Birdie's most consistent punishes for LP Blanka Ball: \n-*MP/EX Bull Head*\n-*EX Bull Horn*\n-*Critical Art*"
                 });
             break; 
 
@@ -101,7 +101,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 
                 bot.sendMessage({
                     to: channelID,
-                    message: 'Blanka can punish LP Blanka Ball on Block with: \n-*HP Blanka Ball* {[4]6HP}\n-*EX Blanka Ball* {[4]6PP}\n-*(Slide {3HP} also works in the corner)*'
+                    message: "Here are Blanka's most consistent punishes for LP Blanka Ball: \n-*HP/EX Blanka Ball*\n-*Blanka Ball (while in VT1)*\n-*Critical Art*"
                 });
             break;
             
@@ -111,7 +111,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 
                 bot.sendMessage({
                     to: channelID,
-                    message: 'Cammy can punish LP Blanka Ball on Block with: \n-*HK Spiral Arrow* {236HK}\n-*EX Spiral Arrow* {236KK}\n-*HK Super* {236236HK}\n-*(Dash-in as well as LK and MK Spiral Arrow work in the corner.)*'
+                    message: "Here are Cammy's most consistent punishes for LP Blanka Ball: \n-*MK/HK/EX Spiral Arrow*\n-*Spiral Arrow (while in VT1)*\n-*Critical Art*"
                 });
             break; 
 
@@ -123,7 +123,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 
                 bot.sendMessage({
                     to: channelID,
-                    message: 'Chun Li can punish LP Blanka Ball on Block with: \n-*Super* [236236K]\n-*(In the Corner, all versions of Lightning Legs connect. She can also Dash-in)'
+                    message: "Here are Chun-Li's most consistent punishes for LP Blanka Ball: \n-*Dash > LK/EX Legs*\n-*Critical Art*"
                 });
             break;
 
@@ -135,7 +135,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 
                 bot.sendMessage({
                     to: channelID,
-                    message: 'Claw can punish LP Blanka Ball on Block with: \n-*Buster Claw* [6HP]\n-*Slide* [2HK]\n-*EX Flying Barcelona* [623/421+KK]'
+                    message: "Here are Claw's most consistent punishes for LP Blanka Ball: \n-*Buster Claw (f+HP w/ claw on)*\n-*Cr.HK*\n-*Dash > Cr.LP*\n-*V-Trigger 1 Activation*\n-*Critical Art*"
                 });
             break;
 
@@ -147,18 +147,222 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 
                 bot.sendMessage({
                     to: channelID,
-                    message: 'Dhalsim can punish LP Blanka Ball on Block with: \n-*{5MP}*\n-*{5MK}*\n-*{5HP}*\n-*{5HK}*\n*-(2MK Slide works in the corner)*'
+                    message: "Here are Dhalsim's most consistent punishes for LP Blanka Ball: \n-*St.MP*\n-*St.MK*\n-*St.HP*\n-*St.HK*"
+                });
+            break;
+
+            // Ed
+            case 'ed':
+            case 'Ed':
+
+                bot.sendMessage({
+                    to: channelID,
+                    message: "Here are Ed's most consistent punishes for LP Blanka Ball: \n-*Dash > St.LP*\n-*V-Reversal > St.MP*\n-*Critical Art*"
                 });
             break;
             
+            // F.A.N.G
+            case 'fang':
+            case 'Fang':
+            case 'f.a.n.g':
+            case 'F.A.N.G':
+
+                bot.sendMessage({
+                    to: channelID,
+                    message: "Here are F.A.N.G's most consistent punishes for LP Blanka Ball: \n-*EX Sotoja*\n-*V-Reversal > St.HK*"
+                });
+            break;
+
+            // Guile
+            case 'guile':
+            case 'Guile':
+
+                bot.sendMessage({
+                    to: channelID,
+                    message: "Here are Guile's most consistent punishes for LP Blanka Ball: \n-*Critical Art*"
+                });
+            break;
+
+            // Ibuki
+            case 'ibuki':
+            case 'Ibuki':
+
+                bot.sendMessage({
+                    to: channelID,
+                    message: "Here are Ibuki's most consistent punishes for LP Blanka Ball: \n-*HP/EX(MP+HP) Kunai*\n-*V-Trigger 2 Activation*\n-*Critical Art*"
+                });
+            break;
+
+            //Juri
             case 'juri':
             case 'Juri':
 
                 bot.sendMessage({
                     to: channelID,
-                    message: 'Juri can punish LP Blanka Ball on Block with: \n-*MK Flipkick* {214MK}\n-*V-Skill (Charged)* {MP+MK}\n-*Super* {214214K}\n-*(In the corner she also gets LK Flipkick as well as Dash-in)*'
+                    message: "Here are Juri's most consistent punishes for LP Blanka Ball: \n-*MK Ryodansatsu*\n-*Critical Art*"
                 });
             break;
+
+            //Karin
+            case 'karin':
+            case 'Karin':
+
+                bot.sendMessage({
+                    to: channelID,
+                    message: "Here are Karin's most consistent punishes for LP Blanka Ball: \n-*HK/EX Kanzuki-Ryu Hokojutsu Seppo > Late Tenko*\n-*HK/EX Kanzuki-Ryu Hokojutsu Seppo > Orochi*\n-*V-Skill (Hold)*\n-*Critical Art*"
+                });
+            break;
+
+            //Ken
+            case 'ken':
+            case 'Ken':
+
+                bot.sendMessage({
+                    to: channelID,
+                    message: "Here are Ken's most consistent punishes for LP Blanka Ball: \n-*EX Tatsu (while in VT1)*"
+                });
+            break;
+
+            //Kolin
+            case 'kolin':
+            case 'Kolin':
+
+                bot.sendMessage({
+                    to: channelID,
+                    message: "Here are Kolin's most consistent punishes for LP Blanka Ball: \n-*Frost Edge (while in VT2)*\n-*V-Reversal > St.HP*\n-*Critical Art*"
+                });
+            break;
+
+            //Laura
+            case 'laura':
+            case 'Laura':
+
+                bot.sendMessage({
+                    to: channelID,
+                    message: "Here are Laura's most consistent punishes for LP Blanka Ball: \n-*MP/EX Bolt Charge*"
+                });
+            break;
+
+            //Dictator
+            case 'bison':
+            case 'Bison':
+            case 'm.bison':
+            case 'M.Bison':
+            case 'dictator':
+            case 'Dictator':
+
+                bot.sendMessage({
+                    to: channelID,
+                    message: "Here are Dictator's most consistent punishes for LP Blanka Ball: \n-*Cr.HK*\n-*MK/HK/EX Double Knee Press*\n-*Psycho Crusher (while in VT2)*"
+                });
+            break;
+
+            //Menat
+            case 'menat':
+            case 'Menat':
+
+                bot.sendMessage({
+                    to: channelID,
+                    message: "Here are Menat's most consistent punishes for LP Blanka Ball: \n-*Nothing ¯\\_(ツ)_/¯*\n-*Soul Spark (w/ Orb near Blanka)*"
+                });
+            break;
+
+            //Nash
+            case 'nash':
+            case 'Nash':
+            case 'charlie':
+            case 'Charlie':
+
+                bot.sendMessage({
+                    to: channelID,
+                    message: "Here are Nash's most consistent punishes for LP Blanka Ball: \n-*V-Trigger 1 Activation (no direction) > Cr.HP*\n-*Critical Art*"
+                });
+            break;
+
+            //Necalli
+            case 'necalli':
+            case 'Necalli':
+
+                bot.sendMessage({
+                    to: channelID,
+                    message: "Here are Necalli's most consistent punishes for LP Blanka Ball: \n-*MP The Disc's Guidance*\n-*Dash > st.LP (while in VT)*\n-*V-Skill (neutral/forward) (while in VT)*"
+                });
+            break;
+
+            //Rashid
+            case 'rashid':
+            case 'Rashid':
+
+                bot.sendMessage({
+                    to: channelID,
+                    message: "Here are Rashid's most consistent punishes for LP Blanka Ball: \n-*EX Eagle Spike*\n-*Eagle Spike (while in VT2)*\n-*V-Reversal > St.MP/St.HP*"
+                });
+            break;
+
+            //R.Mika
+            case 'mika':
+            case 'Mika':
+            case 'r.mika':
+            case 'R.Mika':
+
+                bot.sendMessage({
+                    to: channelID,
+                    message: "Here are Rainbow Mika's most consistent punishes for LP Blanka Ball: \n-*Nothing ¯\\_(ツ)_/¯*"
+                });
+            break;
+
+            //Ryu
+            case 'ryu':
+            case 'Ryu':
+
+                bot.sendMessage({
+                    to: channelID,
+                    message: "Here are Rüdiger's most consistent punishes for LP Blanka Ball: \n-*Dash > St.LK*\n-*EX Hadouken (while in VT1)*\n-*Critical Art (MP/HP)*"
+                });
+            break;
+
+            //Sakura
+            case 'sakura':
+            case 'Sakura':
+
+                bot.sendMessage({
+                    to: channelID,
+                    message: "Here are Sakura's most consistent punishes for LP Blanka Ball: \n-*Dash > St.LK*"
+                });
+            break;
+
+            //Urien
+            case 'urien':
+            case 'Urien':
+
+                bot.sendMessage({
+                    to: channelID,
+                    message: "Here are Urien's most consistent punishes for LP Blanka Ball: \n-*HK/EX Chariot Tackle*\n-*V-Trigger 1 Activation (neutral)*"
+                });
+            break;
+
+            //Zangief
+            case 'zangief':
+            case 'Zangief':
+            case 'gief':
+            case 'Gief':
+
+                bot.sendMessage({
+                    to: channelID,
+                    message: "Here are Zangief's most consistent punishes for LP Blanka Ball: \n-*Nothing ¯\\_(ツ)_/¯*"
+                });
+            break;
+
+            //Zeku
+            case 'zeku':
+            case 'Zeku':
+
+                bot.sendMessage({
+                    to: channelID,
+                    message: "Here are Zeku's most consistent punishes for LP Blanka Ball: \n-*EX Bushin Gram - Koku [Old Zeku]*\n-*(EX)Hayagake > Ashikari [Young Zeku]*\n-*EX Hozanto [Young Zeku]*\n-*Idaten (while in VT1) [Old/Young Zeku]*"
+                });
+            break;
+            
 
             default:
             bot.sendMessage({
@@ -333,7 +537,24 @@ bot.on('message', function (user, userID, channelID, message, evt) {
         }); 
     }
 
+    else if (message.substring(0, 7) == 'bad bot' || message.substring(0, 8) == 'bad Bot' || message.substring(0, 8) == 'Bad bot' || message.substring(0, 8) == 'Bad Bot'){
+
+        bot.sendMessage({
+            to: channelID,
+            message: '( ︶︿︶)_╭∩╮'
+        }); 
+    }
+
+    else if (message.substring(0, 25) == 'Sag gute Nacht, BlankaBot'){
+
+    bot.sendMessage({
+        to: channelID,
+        message: 'Gute Nacht, BlankaBot!'
     });
+
+    }
+
+});
 
 function determineWaifu(game){
 
